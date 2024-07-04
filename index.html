@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Mini App</title>
-
+style{
+    .yesyes{
+    border:4px solid red;
+    }
+}
 </head>
 <body>
 <div style="text-align:  center;">
@@ -17,11 +21,12 @@
     const app = window.Telegram.WebApp;
     const func=()=>{
         const yes=document.createElement('div')
-
-    yes.innerText=window.Telegram.WebApp.initDataUnsafe.initData
+yes.className="yesyes"
+    yes.innerText=window.Telegram.WebApp
 
     document.body.appendChild(yes);
     }
+    
 
 
 
