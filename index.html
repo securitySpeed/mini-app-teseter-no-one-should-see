@@ -10,15 +10,17 @@
 <div style="text-align:  center;">
     hello this is our first test mini app in telegram
 </div>
-<button style="color:black;background-color: white;border: thin black 0.5px;">say hello</button>
+<button onclick=func() style="color:black;background-color: white;border: thin black 0.5px;">say hello</button>
 
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script> 
-    const yes=document.createElement('div')
+    const func=()=>{
+        const yes=document.createElement('div')
 
     const newContent=document.textContent("you did itttttttt, hello")
 
     yes.appendChild(newContent);
+    }
 </script>
 </body>
 </html>
