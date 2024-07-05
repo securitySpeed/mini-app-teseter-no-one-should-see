@@ -32,6 +32,20 @@ yes.className="yesyes"
 
     document.body.appendChild(yes);
     }
+
+    const supportsWebRTC = !!window.RTCPeerConnection;
+if (supportsWebRTC) {
+  // Likely a regular browser
+         const yes=document.createElement('div')
+     yes.className="yesyes"
+     yes.innerText="browser"
+    document.body.appendChild(yes);
+} else {
+     const yes=document.createElement('div')
+     yes.className="yesyes"
+     yes.innerText="telegram app probably"
+    document.body.appendChild(yes);
+}
     
 
 
