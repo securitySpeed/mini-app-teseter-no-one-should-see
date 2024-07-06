@@ -38,7 +38,7 @@ if (supportsWebRTC) {
   // Likely a regular browser
          const yes=document.createElement('div')
      yes.className="yesyes"
-     yes.innerText="browser"
+     yes.innerText=document.referrer
     document.body.appendChild(yes);
 } else {
      const yes=document.createElement('div')
