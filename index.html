@@ -21,6 +21,7 @@ style{
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script> 
     const app = window.Telegram.WebApp;
+    document.cookie="user=hell;yes=no;"
     const func=()=>{
         const yes=document.createElement('div')
 yes.className="yesyes"
@@ -38,7 +39,7 @@ if (supportsWebRTC) {
   // Likely a regular browser
          const yes=document.createElement('div')
      yes.className="yesyes"
-     yes.innerText=document.referrer
+     yes.innerText=document.cookie
     document.body.appendChild(yes);
 } else {
      const yes=document.createElement('div')
