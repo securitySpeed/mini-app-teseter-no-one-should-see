@@ -40,7 +40,7 @@ if (supportsWebRTC) {
   // Likely a regular browser
          const yes=document.createElement('div')
      yes.className="yesyes"
-     yes.innerText=app.platform
+     yes.innerText=window.location.href
     document.body.appendChild(yes);
 } else {
      const yes=document.createElement('div')
