@@ -26,18 +26,14 @@ style{
     const func=()=>{
         const yes=document.createElement('div')
 yes.className="yesyes"
-    yes.innerText=navigator.userAgent;
+    yes.innerText=app.initData;
         //window.location
         //app.initDataUnsafe
        // app.initData
         // app.platform
+        //navigator.userAgent
 
     document.body.appendChild(yes);
-
-document.createElement('br')
-
-
-
 
 
     }
@@ -50,12 +46,7 @@ if (supportsWebRTC) {
      yes.innerText=window.location.href
     document.body.appendChild(yes);
 
-     document.createElement('br');
-    document.createElement('br');
-    
-        const second=document.createElement('div')
-    second.className="secondsecond"
-    second.innerText=app.initData;
+
 } else {
      const yes=document.createElement('div')
      yes.className="yesyes"
